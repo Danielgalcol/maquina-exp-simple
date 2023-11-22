@@ -60,8 +60,14 @@ public class MaquinaExpendedoraSimple {
      * Devuelva el total de dinero acumulado en la máquina desde su último vaciado.
      */
     public int getTotalDineroAcumulado(){
-        
         return totalDineroAcumulado;
+    }
+    
+    /**
+     *  Permita reducir el valor del precio en una cantidad pasada como parámetro (por ejemplo: si el billete vale 30 y la cantidad pasada como parámetro es 7, el nuevo precio del billete debe ser 23). 
+     */
+    public void reducirPrecioBillete(){
+        precioBillete = totalDineroAcumulado - precioBillete;
     }
     
     /**
