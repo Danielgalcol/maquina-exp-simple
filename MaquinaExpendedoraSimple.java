@@ -71,12 +71,19 @@ public class MaquinaExpendedoraSimple {
     }
     
     /**
+     * Simular proceso de extraer dinero q haya acumulado la máquina desde último vaciado.
+     */
+    public void vaciarDepositoDinero(){
+        totalDineroAcumulado = 0; 
+    }
+    
+    /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
     public void introducirDinero(int cantidadIntroducida) {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
-
+    
     /**
      * Imprime un billete para el cliente actual
      */
