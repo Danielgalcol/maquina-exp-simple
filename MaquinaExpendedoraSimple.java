@@ -50,6 +50,13 @@ public class MaquinaExpendedoraSimple {
     }
     
     /**
+     * Permita cambiar el precio del billete al valor introducido como parámetro.
+     */
+    public void setPrecioBillete(int nuevoPrecio){
+        precioBillete = nuevoPrecio;
+    }
+    
+    /**
      * Devuelva el total de dinero acumulado en la máquina desde su último vaciado.
      */
     public int getTotalDineroAcumulado(){
