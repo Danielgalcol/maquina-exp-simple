@@ -64,18 +64,15 @@ public class MaquinaExpendedoraSimple {
     }
     
     /**
-     *  Permita reducir el valor del precio en una cantidad pasada como parámetro (por ejemplo: si el billete vale 30 y la cantidad pasada como parámetro es 7, el nuevo precio del billete debe ser 23). 
+     *  Permita reducir el valor del precio en una cantidad pasada como 
+     *  parámetro (por ejemplo: si el billete vale 30 y la cantidad pasada 
+     *  como parámetro es 7, el nuevo precio del billete debe ser 23). 
      */
-    public void reducirPrecioBillete(){
-        precioBillete = totalDineroAcumulado - precioBillete;
+    public void reducirPrecioBillete(int numeroReducir){
+        precioBillete = precioBillete - numeroReducir;
     }
     
-    /**
-     * Simular proceso de extraer dinero q haya acumulado la máquina desde último vaciado.
-     */
-    public void vaciarDepositoDinero(){
-        totalDineroAcumulado = 0; 
-    }
+    
     
     /**
      * Simula la introduccion de dinero por parte del cliente actual
