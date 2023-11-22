@@ -48,7 +48,15 @@ public class MaquinaExpendedoraSimple {
     public int getBalanceClienteActual() {
         return balanceClienteActual;
     }
-
+    
+    /**
+     * Devuelva el total de dinero acumulado en la máquina desde su último vaciado.
+     */
+    public int getTotalDineroAcumulado(){
+        
+        return totalDineroAcumulado;
+    }
+    
     /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
