@@ -24,10 +24,15 @@ public class MaquinaExpendedoraSimple {
         estacionDestino = "Oviedo";
     }
     
+    /**
+     * Nuevo constructor de origen leon.
+     */
     public MaquinaExpendedoraSimple(int precioDelBillete, String estacionDelDestino){
         estacionOrigen = "León";
         precioBillete = precioDelBillete;
         estacionDestino = estacionDelDestino;
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
     }
 
     /**
